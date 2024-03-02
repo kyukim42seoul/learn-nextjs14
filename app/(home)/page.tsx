@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 async function getMovies() {
-  const response = await fetch({ API_URL });
+  const response = await fetch(API_URL);
   const json = await response.json();
   return json;
 }
